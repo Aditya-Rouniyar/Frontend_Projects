@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Columns</title>
+    <style>
+        .grid {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: repeat(3, auto); */
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap: 1rem;
+        }
+
+        .item {
+            padding: 3rem;
+            background: #f4f4f4;
+            border: 1px #ccc solid;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-gap: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <main>
+        <section>
+            <h1>Welcome to my freaking Website</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
+                 ad iusto facilis quasi perspiciatis officia totam quis velit distinctio 
+                 incidunt.</p>
+        </section>
+        <aside>
+            <h3>Grid System, Bitches</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, placeat.</p>
+        </aside>
+    </main>
+</body>
+</html>

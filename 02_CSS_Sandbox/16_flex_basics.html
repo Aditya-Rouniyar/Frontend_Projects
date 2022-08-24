@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basics</title>
+    <style>
+        #container_1 {
+            display: flex;
+            flex-direction: row; /* This is a default function */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+        }
+
+        .item-1 {
+            background: #f4f4f4;
+            border: 1px #ccc solid;
+            text-align: center;
+            padding: 1rem;
+            flex: 1;
+        }
+
+        #container_1 .item-1:first-child {
+            flex: 2;
+        }
+
+        #container_2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-flow: row wrap-reverse; */
+        }
+
+        .item {
+            background: #f4f4f4;
+            border: 1px #ccc solid;
+            text-align: center;
+            padding: 1rem;
+            margin: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="container_1">
+        <div class="item-1"><h3>Item 1</h3></div>
+        <div class="item-1"><h3>Item 2</h3></div>
+        <div class="item-1"><h3>Item 3</h3></div>
+    </div>
+
+    <div id="container_2">
+        <div class="item"><h3>Item 1</h3></div>
+        <div class="item"><h3>Item 2</h3></div>
+        <div class="item"><h3>Item 4</h3></div>
+        <div class="item"><h3>Item 5</h3></div>
+        <div class="item"><h3>Item 6</h3></div>
+        <div class="item"><h3>Item 7</h3></div>
+        <div class="item"><h3>Item 8</h3></div>
+        <div class="item"><h3>Item 9</h3></div>
+        <div class="item"><h3>Item 10</h3></div>
+        <div class="item"><h3>Item 11</h3></div>
+        <div class="item"><h3>Item 12</h3></div>
+        <div class="item"><h3>Item 13</h3></div>
+        <div class="item"><h3>Item 14</h3></div>
+        <div class="item"><h3>Item 15</h3></div>
+        <div class="item"><h3>Item 16</h3></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+#what .container .items {
+    display: block;
+    padding: 1rem;
+}
+
+/* Align Items to Left */
+#what .container .items .item {
+    display: flex;
+    text-align: left;
+}
+
+/* Positioning Items */
+#what .container .items .item i {
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+/* SmartPhone */
+@media (max-width: 500px) {
+
+    /* Navbar */
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    #navbar ul {
+        padding: 0.5rem;
+    }
+
+    /* Showcase */
+    #showcase .showcase-content {
+        top: 110px;
+    }
+
+    /* Section: Who We Are */
+    #who {
+        display: block;
+    }
+
+    #who .who-img {
+        display: none;
+    }
+
+    /* Section: Clients */
+    #clients .container .items img {
+        width: 80%;
+    }
+
+    #clients .container .items div:last-child {
+        display: none;
+    }
+
+    /* Section: Contact Form */
+    #contact {
+        display: block;        
+    }   
+
+    #contact .map {
+        height: 300px;
+        border-top: 4px solid #333;
+    }
+
+    @media (max-height: 640px) {
+        /* Utiltiy */
+        #showcase .showcase-content {
+            margin-top: -2rem;
+            top: 142px;
+        }
+
+        .l-heading {
+            font-size: 3rem;
+        }
+
+        .lead {
+            font-size: 1rem;
+        }
+    }
+
+}

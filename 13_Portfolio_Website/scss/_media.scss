@@ -1,0 +1,170 @@
+// Tablet & Smaller
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+}
+
+// Smartphone
+@media (max-width: 500px) {
+  // Header
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px $main-color solid;
+      background-position: 20% 30%;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  //  Main-Nav
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  //   Stack Grid
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  //   Home
+  #home {
+    //   Home Section A
+    &-a {
+      .specials div {
+        border-bottom: 1px $light-color solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
+    // Home Section B
+    &-b {
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  //   About
+  #about {
+    // About a
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bio-img"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3";
+      }
+    }
+
+    // About c
+    &-c {
+      display: none;
+    }
+  }
+
+  //   Contact Page
+  #contact {
+    //   Contact Form a
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+
+    // Contact Form b
+    &-b {
+      .contact-info {
+        div {
+          border-bottom: 1px #555 solid;
+          margin-bottom: 1rem;
+          padding-bottom: 1rem;
+
+          &:last-child {
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    // Contact Form c
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  //   Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+
+      padding: 1rem;
+      height: 6rem;
+
+      .social {
+        margin-top: 0.75rem;
+      }
+    }
+  }
+}
+
+// Landscape View
+@media (max-height: 580px) {
+  #header {
+    &-home {
+      .header-content {
+        padding-top: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-height: 415px) {
+  #header {
+    &-home {
+      .header-content {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

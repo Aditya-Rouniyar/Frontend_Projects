@@ -1,0 +1,15 @@
+/* Align Items to Left */
+#what .container .items .item {
+    display: flex;
+}
+
+/* Positioning Items */
+#what .container .items .item i {
+    margin-right: 1rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+#contact .map {
+    flex: 2;
+}

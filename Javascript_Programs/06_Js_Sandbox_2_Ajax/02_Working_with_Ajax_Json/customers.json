@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "Name": "Kajol Devkota",
+        "Company": "Devkota Industry",
+        "Phone": "111-222-3333"
+    },
+
+    {
+        "id": 2,
+        "Name": "Ritu Marashini",
+        "Company": "Marashini Industry",
+        "Phone": "444-232-3363"
+    },
+
+    {
+        "id": 3,
+        "Name": "Sijana Dhungana",
+        "Company": "Dhungana Industry",
+        "Phone": "661-322-3883"
+    }
+]

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Align</title>
+    <style>
+        #container {
+            display: flex;
+            background: #444;
+            height: 600px;
+            /* Align Items */
+
+            /* Horizontal */
+            justify-content: space-evenly;
+            /* 
+               Options:
+                flex-start
+                flex-end
+                center
+                space-around
+                space-between
+                space-evenly
+            */
+
+            /* Vertical (must be height) */
+            align-items: baseline;
+            /* 
+               Options:
+                flex-start
+                flex-end
+                center
+                baseline
+            */
+        }
+
+        #container_1 {
+            display: flex;
+            background: #444;
+            height: 600px;
+            flex-wrap: wrap;
+            /* Align Items */
+            align-items: baseline;
+
+            /* For Items with extra space or more rows */
+            align-content: space-around;
+             /* 
+               Options:
+                flex-start
+                flex-end
+                center
+                space-around
+                space-between
+            */
+        }
+
+        .item {
+            background: #f4f4f4;
+            border: 1px #ccc solid;
+            text-align: center;
+            padding: 1rem;
+            margin: 0.5rem;
+            flex-basis: 200px; /* width: 300px; */
+        }
+
+        .item-1 {
+            order: 3;
+        }
+
+        .item-2 {
+            /* Align a single item vertical */
+            align-self: center;
+            /* 
+               Options:
+                flex-start
+                flex-end
+                center
+                baseline
+                stretch
+            */
+            order: 1;
+
+        }
+
+        .item-3 {
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item item-1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+    <br>
+    <div id="container_1">
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item">
+            <h3>Item 3</h3>
+        </div>
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item">
+            <h3>Item 3</h3>
+        </div>
+        <div class="item">
+            <h3>Item 3</h3>
+        </div>
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+    </div>
+</body>
+</html>

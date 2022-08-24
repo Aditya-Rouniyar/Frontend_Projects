@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        body {
+            background: #333;
+        }
+
+        .box {
+           background: white; 
+           width: 200px;
+           height: 200px;
+           position: relative;
+           /*
+           animation-name: animate1; || name of animation 
+           animation-duration: 5s; || Duration of animation 
+           animation-iteration-count: 1; || Number of times animation repeated 
+           animation-fill-mode: forwards; || Keeps the final animation, doesn't revert back 
+           animation-delay: 2s; || Delay to start the animation 
+           animation-direction: alternate; || starts from start or from starts from end 
+           animation-timing-function: ease-in; || Slowly starts and end speed 
+           */
+           animation: animate1 5s forwards 1s ease-in-out;
+        }
+
+        @keyframes animate1 {
+            from {
+                width: 200px;
+                top: 0;
+            }
+            to {
+                width: 600px;
+                background-color: red;
+                top: 400px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
